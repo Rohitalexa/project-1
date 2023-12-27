@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinup page</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+ .outerbox{
+    width: 100vw;
+    height: 100vh;
+  background: linear-gradient(to top left,#3ed8ff,#a8f5ff);
+ }
+.inerbox{
+    width: 400px;
+    
+    margin:  auto;
+    position: relative;
+    top: 60px;
+    transform: translateY(-50);
+    padding: 20px 40px;
+    background-color: #ffffffcc;
+    backdrop-filter: blur(8px);
+    border-radius: 9px;
+    box-shadow: 3px 3px 6px #3ed8ff;
+    z-index: 2;
+
+    
+}
+.sinupheader h1{
+    font-size: 2.4rem;
+    color:#212121
+}
+.sinupheader p{
+  font-size: 0.9rem;
+  color: #555;
+}
+.sinupbody{
+    margin: 20px 0px;
+}
+.sinupbody p{
+    margin: 20px 0px;
+}
+.sinupbody p label{
+    display: block;
+    font-weight: boldfo;
+}
+.sinupbody p input{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+#submit{
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: darkblue;
+}
+footer p{
+    text-align: center;
+}
+footer p a{
+    color: #3498db;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    
+    position: absolute;
+}
+.c1{
+    top: 100px;
+    left: 40px;
+    background-color: blue;
+}
+.c2{
+    bottom: 200px;
+    right: 50px;
+    background-color: lightcoral;
+}
+</style>
+</head>
+<body>
+   <div class="outerbox">
+    <div class="inerbox">
+        <header class="sinupheader">
+        <h1>Sinup page</h1>
+<p>it just take 30 second</p>
+        </header>
+        <main class="sinupbody">
+            <form action="#">
+                <p>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Rohit singh Rajput" required autofocus>
+                </p>
+                 <p>
+                    <label for="email">Enter Email</label>
+                    <input type="email" id="email" placeholder="rohitsingh544133@gmail.com" required>
+                </p>
+                <p>
+                    <label for="password">Your password</label>
+                    <input type="password" id="password" placeholder="at least 8 charcters" required>
+                </p>
+
+                <p>
+                    <input type="submit" id="submit" value="Create Accout" >
+                </p>
+
+            </form>
+        </main>
+        <footer>
+            <p>Already have an accout <a href="#">LOGIN</a></p>
+        </footer>
+    </div>
+    <div class="circle c1" ></div>
+    <div class="circle c2" ></div>
+   </div>
+</body>
+</html>
